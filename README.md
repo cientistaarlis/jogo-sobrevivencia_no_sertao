@@ -83,7 +83,7 @@ Este programa foi desenvolvido como trabalho da disciplina **Algoritmos e Progra
 
 ### Executável pronto (Windows)
 
-1. Baixe o arquivo `jogo-nordeste.exe` da [página de releases](../../releases)
+1. Baixe o arquivo `jogo-nordeste.exe` 
 2. Dê um duplo clique para executar no terminal do Windows
 
 ---
