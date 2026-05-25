@@ -3,10 +3,7 @@
 > **Jogo educativo em C** • Aventura cultural pelo Nordeste brasileiro  
 > Atravesse 7 dias de sertão como um vaqueiro, gerencie sua água e tome decisões inspiradas na cultura nordestina.
 
-![Status](https://img.shields.io/badge/status-concluído-brightgreen)
 ![Linguagem](https://img.shields.io/badge/linguagem-C-blue)
-![Plataforma](https://img.shields.io/badge/plataforma-CLI-orange)
-![Licença](https://img.shields.io/badge/licença-MIT-lightgrey)
 
 ---
 
