@@ -1,12 +1,12 @@
-# 🌵 Sobrevivência no Sertão - Jogo em C
-Um jogo de sobrevivência e decisões culturais inspirado no sertão nordestino brasileiro.
-Você é um vaqueiro que precisa atravessar 7 dias de viagem até o Arraial do Forró, gerenciando sua água e enfrentando desafios típicos da caatinga.
+# 🌵 Sobrevivência no Sertão — Jogo em C
 
-> **Jogo Educativo em C** • Aventura Cultural pelo Nordeste Brasileiro
+> **Jogo educativo em C** • Aventura cultural pelo Nordeste brasileiro  
+> Atravesse 7 dias de sertão como um vaqueiro, gerencie sua água e tome decisões inspiradas na cultura nordestina.
 
 ![Status](https://img.shields.io/badge/status-concluído-brightgreen)
 ![Linguagem](https://img.shields.io/badge/linguagem-C-blue)
 ![Plataforma](https://img.shields.io/badge/plataforma-CLI-orange)
+![Licença](https://img.shields.io/badge/licença-MIT-lightgrey)
 
 ---
 
@@ -16,73 +16,77 @@ Você é um vaqueiro que precisa atravessar 7 dias de viagem até o Arraial do F
 - [Como Funciona](#-como-funciona)
 - [Regras do Jogo](#-regras-do-jogo)
 - [Interações](#-interações)
-- [Código Fonte](#-código-fonte)
+- [Elementos Culturais](#-elementos-culturais)
+- [Regras Acadêmicas](#-regras-acadêmicas)
 - [Como Compilar e Executar](#-como-compilar-e-executar)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
 - [Créditos](#-créditos)
 
 ---
 
 ## 💡 Ideia e Objetivo
 
-**Sobrevivência no Sertão** é um jogo de aventura textual desenvolvido em linguagem C que simula a jornada épica de um vaqueiro pelo sertão nordestino.
+**Sobrevivência no Sertão** é um jogo de aventura textual que simula a jornada de um vaqueiro pelo interior do Nordeste brasileiro, partindo do litoral rumo ao **Arraial do Forró** (no coração da Bahia).  
+O jogador precisa gerenciar estrategicamente a água de seu cantil para resistir ao calor causticante e chegar ao destino em **7 dias**.
 
-### 🎯 Objetivo Principal
-Atravessar **7 dias de viagem** partindo do litoral até o **Arraial do Forró**, no interior da Bahia, gerenciando estrategicamente a água do seu cantil para não sucumbir ao calor causticante do sertão.
+### 🏆 Condições de vitória e derrota
 
-### 🏆 Condições de Vitória/Derrota
 | Resultado | Condição |
 |-----------|----------|
-| ✅ **Vitória** | Chegar ao dia 7 com `água > 0` |
-| ❌ **Derrota** | Ter `água ≤ 0` em qualquer dia da jornada |
+| ✅ **Vitória** | Completar os 7 dias com `água > 0` |
+| ❌ **Derrota** | Deixar a água chegar a `≤ 0` em qualquer dia |
 
 ---
 
 ## 🎮 Como funciona
-A jornada é dividida em 7 dias.
 
-A cada dia você escolhe entre três ações:
+A jornada é dividida em **7 dias**. A cada dia o jogador deve escolher um dos três caminhos disponíveis.  
+Eventos aleatórios (gerados por `rand()`) fazem cada partida ser única.
 
-Estrada de barro: caminho seguro, chance de achar uma cacimba.
+### Opções diárias
 
-Cortar pela caatinga: arriscado, pode encontrar um mandacaru ou um bode bravo.
+| Opção | Descrição | Riscos e recompensas |
+|-------|-----------|----------------------|
+| **1. Estrada de barro** | Caminho seguro, mas monótono. | Pode encontrar uma **cacimba** (+20 de água) ou nada. |
+| **2. Cortar pela caatinga** | Trilha arriscada entre a vegetação espinhosa. | Pode achar um **mandacaru** florido (+25 de água) ou enfrentar um **bode bravo** (-15 de água). |
+| **3. Pedir ajuda a um vaqueiro** | Minigame de adivinhação. | Acertar o número de botões do gibão do vaqueiro concede +30 de água; errar custa -5. |
 
-Pedir ajuda a um vaqueiro: minigame de adivinhação (quantos botões tem no gibão?).
+### ⚠️ Desgaste diário
 
-O jogo termina ao fim dos 7 dias ou se sua água chegar a 0.
+Independentemente da escolha, cada dia consome **10 unidades de água** — o sol do sertão não perdoa.
 
-Eventos aleatórios usando rand() tornam cada partida única.
-
-
-### Regras do desafio (acadêmico)
-Este programa foi desenvolvido como exercício da disciplina _Algoritmos e Programação 2026_1 PosDevWeb-IFSP_, respeitando as seguintes restrições:
-
-Apenas uma função (main())
-
-Sem vetores, matrizes, funções ou procedimentos adicionais
-
-Uso obrigatório de for, while e rand()/srand()
-
-Estruturas sequenciais e condicionais (if, switch)
-
+---
 
 ## 🧠 Elementos culturais
-O jogo homenageia a cultura nordestina:
 
-• Mandacaru (cacto que armazena água)  🌵
+O jogo é uma homenagem à riqueza do sertão nordestino. Ao longo da jornada, o jogador encontra:
 
-• Cacimba (poço artesanal) 🪣
+- 🌵 **Mandacaru** — cacto que armazena água, símbolo de resistência  
+- 🪣 **Cacimba** — poço artesanal cavado no leito seco dos rios  
+- 🤠 **Vaqueiro e seu gibão** — o traje de couro que protege o vaqueiro na caatinga  
+- 🎵 **Arraial do Forró** — a festa de sanfona e quadrilha que aguarda no destino, Festa junina, patrimônio cultural
+- 🗣️ Linguagem regional: Expressões como "Eita, cabra bom!"
 
-• Vaqueiro e seu gibão (traje de couro típico) 🤠
+A narrativa se constrói sobre a resiliência, a sabedoria popular e as tradições do povo sertanejo.
 
-Referências ao forró e à resiliência do povo sertanejo
+---
 
+## 📜 Regras acadêmicas (restrições do exercício)
 
-## 🚀 Como Usar (Recomendado para Windows)
+Este programa foi desenvolvido como trabalho da disciplina **Algoritmos e Programação 2026/1 — Pós‑graduação em Desenvolvimento Web (IFSP)**, respeitando obrigatoriamente:
 
-1. **Baixe o executável**
-   - Baixe diretamente o arquivo `jogo-nordeste.exe`
+- ❌ **Proibido uso de vetores, matrizes, funções ou procedimentos** (apenas `main()`)
+- ✅ Uso obrigatório de `for` e/ou `while`
+- ✅ Uso obrigatório de geração aleatória (`rand()` / `srand()`)
+- ✅ Apenas estruturas sequenciais e condicionais (`if`, `switch`)
 
-2. **Execute o programa**
-   - Dê um duplo clique no arquivo `jogo-nordeste.exe`
-   - O programa abrirá no terminal/cmd
-   
+> O desafio está justamente em criar um jogo interativo e divertido sem os recursos tradicionais de armazenamento e modularização.
+
+---
+
+## 🚀 Como Usar
+
+### Executável pronto (Windows)
+
+1. Baixe o arquivo `jogo-nordeste.exe` da [página de releases](../../releases)
+2. Dê um duplo clique para executar no terminal do Windows
