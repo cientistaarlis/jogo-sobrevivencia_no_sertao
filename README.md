@@ -10,12 +10,10 @@
 ## 📋 Índice
 
 - [Ideia e Objetivo](#-ideia-e-objetivo)
-- [Como Funciona](#-como-funciona)
-- [Regras do Jogo](#-regras-do-jogo)
-- [Interações](#-interações)
+- [Como funciona](#-como-funciona)
 - [Elementos Culturais](#-elementos-culturais)
-- [Regras Acadêmicas](#-regras-acadêmicas)
-- [Como Compilar e Executar](#-como-compilar-e-executar)
+- [Regras acadêmicas (restrições do exercício)](#-regras-acadêmicas-restrições-do-exercício)
+- [Como Usar](#-como-usar)
 - [Estrutura do Projeto](#-estrutura-do-projeto)
 - [Créditos](#-créditos)
 
@@ -54,7 +52,7 @@ Independentemente da escolha, cada dia consome **10 unidades de água** — o so
 
 ---
 
-## 🧠 Elementos culturais
+## 🧠 Elementos Culturais
 
 O jogo é uma homenagem à riqueza do sertão nordestino. Ao longo da jornada, o jogador encontra:
 
@@ -87,3 +85,13 @@ Este programa foi desenvolvido como trabalho da disciplina **Algoritmos e Progra
 
 1. Baixe o arquivo `jogo-nordeste.exe` da [página de releases](../../releases)
 2. Dê um duplo clique para executar no terminal do Windows
+
+---
+
+## 📂 Estrutura do Projeto
+
+- `jogo-nordeste.c` — Código-fonte completo (single file)
+
+## 📝 Créditos
+
+Desenvolvido como trabalho acadêmico para a disciplina de Algoritmos e Programação – IFSP 2026/1.
